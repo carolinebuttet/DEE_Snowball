@@ -1,0 +1,30 @@
+body, html{
+  width:100%;
+  height:100%;
+}
+.intro {
+  width:100%;
+  height:100%;
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.live-stream{
+  width:100%;
+  height:100%;
+  display:none; 
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
+
+.end-screen{
+  width:100%;
+  height:100%;
+  display:none;
+  flex-direction: column;
+  align-items:center;
+  justify-content: center;
+}
