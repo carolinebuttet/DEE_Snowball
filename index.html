@@ -25,14 +25,23 @@
 
 <body>
   <!-- Intro screen -->
-  <div class="intro">
+  <div class="intro" id="capture">
     <p>Bienvenue sur la carte de voeux de la DEE!</p>
     <button>Commencer</button>
+    <button id="screenshot">Screenshot</button>
   </div>
 
   <!-- Live video screen -->
   <div class="live-stream">
-    <p>Live stream</p>
+    <div class="video-container">
+      <p>La citation ici</p>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/KUe1xwvp6FY?autoplay=1&controls=0"
+        title="YouTube video player" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+
+
     <button id="fan">Actionner le ventilateur</button>
     <button id="end-exp">Terminer l'expérience</button>
   </div>
@@ -60,7 +69,9 @@
 
 
   <!--  Scripts -->
+  <script src="js/vendor/html2canvas.min.js"></script>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/citations.js"></script>
   <script src="js/main.js"></script>
 </body>
 
