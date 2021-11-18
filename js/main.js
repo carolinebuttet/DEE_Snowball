@@ -22,9 +22,9 @@ const addListeners = ()=>{
 
 const takeScreenShot = () =>{
   console.log('take screen shot!')
-  const iframe = document.getElementsByTagName('iframe');
-  console.log('screen =', screen, 'iframe=', iframe);
-  
+  html2canvas(document.querySelector("#capture")).then(canvas => {
+      document.body.appendChild(canvas)
+  });
 
 }
 
