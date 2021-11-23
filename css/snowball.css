@@ -65,9 +65,8 @@ body, html{
 }
 
 .card-container{
-  width:300px;
+  width:auto;
   height:300px;
-  border:3px solid red;
   display:flex;
   position:relative;
   
@@ -75,14 +74,13 @@ body, html{
 
 .card-container img{
   height:100%;
-  width:100%;
-  object-fit: cover;
+  width:auto;
 }
 
 .card-container p{
   position:absolute;
   top:10px;
   left:20px;
-  color:white;
+  color:red;
   z-index: 2;
 }

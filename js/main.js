@@ -7,6 +7,7 @@ const introContainer = document.querySelector(".intro");
 const liveStreamContainer = document.querySelector(".live-stream");
 const endScreenContainer = document.querySelector(".end-screen");
 const quote = document.querySelector(".video-container p");
+const downloadButton = document.querySelector("#download-card");
 let citation = "";
 
 // changer le temps de délai d'apparition du texte
@@ -17,13 +18,20 @@ const addListeners = ()=>{
   finishStreamButton.addEventListener("click", showEndScreen);
   restartButton.addEventListener("click", resetExp);
   fanButton.addEventListener("click", activateFan);
-  screenShotButton.addEventListener("click", takeScreenShot);
+  downloadButton.addEventListener("click", downloadCard);
 }
 
-const takeScreenShot = () =>{
+const downloadCard = () =>{
   console.log('take screen shot!')
-  html2canvas(document.querySelector("#capture")).then(canvas => {
-      document.body.appendChild(canvas)
+  html2canvas(document.querySelector("#capture"), {
+    allowTaint: true,
+  }).then(canvas => {
+      //document.body.appendChild(canvas)
+      // trigger a downlaod with the canvas as an image!
+      var link = document.createElement('a');
+      link.download = 'dee-comme-neige.png';
+      link.href = canvas.toDataURL()
+      link.click();
   });
 
 }
