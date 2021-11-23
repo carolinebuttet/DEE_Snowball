@@ -56,15 +56,23 @@
     <div>
       <p>Merci d'avoir participé!</p>
       <p>Voici votre carte:</p>
+      <div class="card-container">
+        <img
+          src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/ec/Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg/804px-Mona_Lisa%2C_by_Leonardo_da_Vinci%2C_from_C2RMF_retouched.jpg"
+          alt="">
+        <p>Mon texte</p>
+      </div>
       <img src="" alt="">
     </div>
 
     <div>
       <p>Partagez cette expérience sur les réseaux!</p>
       <div>
-        <button>Twitter</button>
-        <button>Facebook</button>
-        <button>Instagram</button>
+        <button id="native-share">Partage natif!</button>
+        <a href="https://twitter.com/intent/tweet?url=https://dee-vwd.ch/&text=La%20DEE%20vous%20pr%C3%A9sente%20ses%20voeux%20de%20fin%20d'ann%C3%A9e!"
+          target="_blank">Twitter</a>
+        <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https://dee-vwd.ch/">Facebook</a>
+        <a href="mailto:info@example.com?&subject=&cc=&bcc=&body=https://dee-vwd.ch/%0A" target="_blank">Courriel</a>
         <button>Télécharger ma carte</button>
       </div>
     </div>
@@ -78,6 +86,7 @@
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/translations.js"></script>
   <script src="js/citations.js"></script>
+  <script src="js/share.js"></script>
   <script src="js/main.js"></script>
 </body>
 

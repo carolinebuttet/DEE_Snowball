@@ -36,8 +36,9 @@ body, html{
 }
 
 .video-container{
-  width: 100vh;
-  height: 100vw;
+  width: 50vh;
+  height: 50vw;
+  opacity: 0.5;
   position:relative;
   background: black;
   pointer-events: none;
@@ -61,4 +62,27 @@ body, html{
 
 .visible{
   opacity:1!important;
+}
+
+.card-container{
+  width:300px;
+  height:300px;
+  border:3px solid red;
+  display:flex;
+  position:relative;
+  
+}
+
+.card-container img{
+  height:100%;
+  width:100%;
+  object-fit: cover;
+}
+
+.card-container p{
+  position:absolute;
+  top:10px;
+  left:20px;
+  color:white;
+  z-index: 2;
 }
